@@ -5,9 +5,9 @@ int main() {
                                 {6, 5, 4}, 
                                 {7, 8, 9}};
 
-    vector<vector<int>> mat2 = {{6, 5}, 
-                                {7, 8}, 
-                                {1, 2}};
+    vector<vector<int>> mat2 = {{6, 5, 4}, 
+                                {7, 8, 9}, 
+                                {1, 2, 3}};
 
     Matrix M1(mat1);
     Matrix M2(mat2);

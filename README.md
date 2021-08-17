@@ -20,9 +20,9 @@ vector<vector<int>> mat1 = {{1, 2, 3},
                             {6, 5, 4}, 
                             {7, 8, 9}};
 
-vector<vector<int>> mat2 = {{6, 5}, 
-                            {7, 8}, 
-                            {1, 2}};
+vector<vector<int>> mat2 = {{6, 5, 4}, 
+                            {7, 8, 9}, 
+                            {1, 2, 3}};
 
 Matrix M1(mat1);
 Matrix M2(mat2);
@@ -32,10 +32,23 @@ Matrix M2(mat2);
 ```cpp
 Matrix M3 = M1 + M2;
 ```
+**Result**
+```sh
+7  7  7 
+13 13 13 
+8  10 12
+```
 
 ### Subtraction
 ```cpp
 Matrix M4 = M1 - M2;
+```
+
+**Result**
+```sh
+-5 -3 -1 
+-1 -3 -5 
+ 6  6  6
 ```
 
 ### Multiplication
@@ -49,9 +62,9 @@ Matrix M5 = M1 * M2;
 ```cpp
 M5.print();
 ```
-Result
+**Result**
 ```bash
-23 27 
-75 78 
-107 117
+23  27  31 
+75  78  81 
+107 117 127
 ```
